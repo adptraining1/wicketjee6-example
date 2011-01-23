@@ -1,0 +1,65 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" >
+    <head>  
+        <title>Wicket Java EE 6 Demo Application</title>
+    </head>
+    <body>
+        <strong>Wicket Java EE 6 Demo Application</strong>
+        <br/><br/>
+        <div wicket:id="super">
+        <span wicket:id="feedback"/>
+        <form wicket:id="form">
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" wicket:id="name"/></td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td><input type="text" wicket:id="lastname"/></td>
+                </tr>
+                <tr>
+                    <th>EMail</th>
+                    <td><input type="text" wicket:id="email"/></td>
+                </tr>
+                <tr>
+                    <th>Birthday</th>
+                    <td><input type="text" wicket:id="birthday"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" wicket:id="submit"/></td>
+                </tr>
+            </table>
+        </form>
+        <br/>
+
+        <br/><br/>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>EMail</th>
+                <th>Birthday</th>
+            </tr>
+            <tr wicket:id="persons">
+                <td>
+                    <span wicket:id="id"/>
+                </td>
+                <td>
+                    <span wicket:id="name"/>
+                </td>
+                <td>
+                    <span wicket:id="lastname"/>
+                </td>
+                <td>
+                    <span wicket:id="email"/>
+                </td>
+                <td>
+                    <span wicket:id="birthday"/>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

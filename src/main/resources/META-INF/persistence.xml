@@ -1,0 +1,15 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="manager1" transaction-type="JTA">
+        <jta-data-source>jdbc/__default</jta-data-source>
+        <class>com.senacor.wicket.domain.Person</class>
+
+        <properties>
+            <property name="eclipselink.logging.level.sql" value="FINEST" />
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="eclipselink.target-database" value="Derby"/>
+        </properties>
+    </persistence-unit>
+</persistence>
